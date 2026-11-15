@@ -13,10 +13,12 @@ body{
 }
 .navigation {
     background:var(--primary); color:white;
-     padding:15px 20px; 
+     padding:  20px; 
      display:flex; 
      justify-content:space-between; 
-     align-items:center;}
+     align-items:center;
+}
+
 .navigation {
     color:white; 
     text-decoration:none; 
@@ -24,16 +26,17 @@ body{
 }
 .navlinks{
     display:flex; 
-    gap:20px;
+    gap:80px;
 }
 .navlinks > a.active{
-    color:yellow; 
-    border-bottom:2px solid yellow;
+    color:black; 
+    border-bottom:2px solid black;
 }
-.menu-btn{display:none; 
+.menu-btn{
+    display:none; 
     background:none; 
     border:none; 
-    color:white; 
+    color:rgb(151, 19, 19); 
     font-size:24px; 
     cursor:pointer;
 }
@@ -47,6 +50,7 @@ body{
     font-size:32px; 
     margin-bottom:10px;
 }
+
 main{
     max-width:1000px; 
     margin:20px auto; 
@@ -101,7 +105,7 @@ input:focus>select:focus>textarea:focus{
 .btn{
     display:inline-block; 
     background:var(--primary); 
-    color:white; 
+    color:#2563eb; 
     padding:10px 20px; 
     border:none; 
     border-radius:6px; 
@@ -116,7 +120,7 @@ input:focus>select:focus>textarea:focus{
 }
 .btn-Alert{
     background:var(--red); 
-    color:white; 
+    color: blue; 
     padding:10px 15px; 
     border:none; 
     border-radius:6px; 
