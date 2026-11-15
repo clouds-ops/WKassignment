@@ -11,6 +11,11 @@ body{
     background-color: grey; 
     color:var(--text);
 }
+.hero > h1 {
+    color: aqua;
+    font-style: italic;
+    text-decoration: dashed;
+}
 .navigation {
     background:var(--primary); color:white;
      padding:  20px; 
@@ -53,17 +58,18 @@ body{
 
 main{
     max-width:1000px; 
-    margin:20px auto; 
+    margin:2px auto; 
     padding:0 15px;
 }
 h2{
-    margin:25px 0 10px; 
+    margin: 2px; 
     color:var(--primary);
 }
-.stats{display:grid; 
+.stats{
+    display:grid; 
     grid-template-columns:repeat(4,1fr); 
     gap:15px; 
-    margin:15px 0;
+    margin: 15px;
 }
 .grid{
     display:grid; 
@@ -78,7 +84,14 @@ h2{
     box-shadow:0 2px 8px rgba(0,0,0,0.1);
 }
 .card.green{
-    border-top:4px solid green;} .card.red{border-top:4px solid red;} .card.blue{border-top:4px solid blue;
+    border-top:4px solid green;
+} 
+
+.card.red{
+    border-top:4px solid red;
+} 
+.card.blue{
+    border-top:4px solid blue;
 }
 
 form{
@@ -155,7 +168,16 @@ tr:hover{
     font-weight:bold;
 }
 .excellent{
-    background:green;} .verygood{background:#16a34a;} .good{background:#2563eb;} .average{background:#f59e0b;} .failed{background:#ef4444;}
+    background:green;
+} .verygood{
+    background:#16a34a;
+} .good{
+    background:#2563eb;
+} .average{
+    background:#f59e0b;
+} .failed{
+    background:#ef4444;
+}
 .error{
     color:red; 
     background:#fee2e2; 
@@ -187,15 +209,4 @@ footer{
 }
 footer > a {
     color:white;
-}
-
-@media(max-width:900px){
-  .stats,.grid{grid-template-columns:repeat(2,1fr);}
-}
-@media(max-width:600px){
-  .menu-btn{display:block;}
-  .navlinks{display:none; flex-direction:column; background:var(--primary); position:absolute; top:60px; right:0; left:0; padding:15px;}
-  .navlinks.show{display:flex;}
-  .stats,.grid{grid-template-columns:1fr;}
-  table{font-size:12px;}
 }
