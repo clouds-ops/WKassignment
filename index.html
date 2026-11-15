@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Student M System </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+<header>    
+<nav class="navigation">
+    <a href="index.html" class="logo"> Wezesha Schools </a>
+    <button class="menu-btn"onclick="toggleMenu()"> menu</button>
+
+    <div class="navlinks" id="navLinks">
+         <a href="index.html"class="active"> Home </a>
+         <a href="about.html"> About Us </a>
+         <a href="course.html"> Courses </a>
+         <a href="contact.html"> Contacts </a>
+    </div>
+</nav>
+</header>
+
+<section class="hero">
+    <h1> Welcome to Wezesha Schools </h1>
+    <p> Naturing Talent to shape tomorrows generation</p>
+    <a href="#register" class="btn"> Register Student </a>
+</section>
+
+<main>
+    <h2> Dashboard </h2>
+<div class="levels">
+    <div class="card">
+        <h3 id="totalStudents">0</h3>
+        <p>Total Students</p>
+    </div>
+    <div class="card green">
+        <h3 id="passedStudents">0</h3>
+        <p>Passed</p>
+    </div>
+        <div class="card blue">
+        <h3 id="avgMarks">0</h3>
+        <p>Average Marks</p>
+    </div>
+    <div class="card red">
+        <h3 id="failedStudents">0</h3>
+        <p>Failed</p>
+    </div>
+  </div>
+  <p id="topBottom"></p>
+</div>
+
+<section id="register">
+    <h2> Student Registation Form </h2>
+    <P id="formMessage"></P>
+    <form id="studentForm">
+        <label> Full Name </label>
+        <input type="text" id="fullName"placeholder=" E.g. Clouds">
+         <label>Age</label>
+      <input type="number" id="age" placeholder="E.g. 21">
+      <label>Gender</label>
+      <select id="gender">
+        <option value="">Select Gender</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Other">Both</option>
+      </select>
+      <label>Course</label>
+      <select id="course">
+        <option value="">Select Course</option>
+        <option>Software Development</option>
+        <option>Web Design</option>
+        <option>Data Analysis</option>
+        <option>Cyber Security</option>
+        <option>Networking</option>
+        <option>Graphic Design</option>
+        <option>Digital Marketing</option>
+        <option>Computer Packages</option>
+      </select>
+      <label>Marks (0 - 100)</label>
+      <input type="number" id="marks" placeholder="e.g. 70">
+      <button type="submit" class="btn">Register Student</button>                             
+    </form>
+</section>
+
+<section>
+    <h2> Search and Filters </h2>
+    <input type="text" id="searchInput" placeholder="Search by name..." onkeyup="searchStudent()">
+    <select id="filterCourse" onchange="displayStudent()">
+      <option value="">All Courses</option>
+      <option>Software Development</option>
+      <option>Web Design</option>
+      <option>Data Analysis</option>
+      <option>Cyber Security</option>
+      <option>Networking</option>
+      <option>Graphic Design</option>
+      <option>Digital Marketing</option>
+      <option>Computer Packages</option>
+    </select>
+    <button onclick="sortByMarks()">Sort by Marks(From High to Low)</button>
+    <button onclick="clearAllStudents()" class="btn-alert"> Clear All </button>
+    <p id="searchMessage"></p>
+</section>
+
+<section>
+    <h2> Student Records </h2>
+    <table>
+        <thead>
+            <tr><th>Name</th><th> Age </th><th>Gender</th><th>Course</th><th>Marks</th><th>Performance</th><th>Action</th></tr>
+        </thead>
+        <tbody id="studentTable"></tbody>
+    </table>
+</section>
+</main>
+
+<footer>
+  <p><b>Wezesha Schools</b> | <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="courses.html">Courses</a> | <a href="contact.html">Contact</a></p>
+  <p>© 2026 Wezesha Schools . All rights reserved.</p>
+</footer>
+<script src="js/script.js"></script>
+
+</body>
+</html>
