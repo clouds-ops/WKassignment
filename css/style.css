@@ -38,11 +38,12 @@ body{
 }
 .navlinks{
     display:flex; 
-    gap:80px;
+    text-decoration: none;
+    gap:40px;
 }
 .navlinks > a.active{
     color:black; 
-    border-bottom:2px solid black;
+  
 }
 .menu-btn{
     display:none; 
