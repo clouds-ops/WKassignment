@@ -56,7 +56,7 @@ function displayStudents(){
   document.getElementById("failedStudents").textContent = failed;
   document.getElementById("avgMarks").textContent = count > 0 ? (total / count).toFixed(1) : 0;
   let topEl = document.getElementById("topBottom");
-  if(highest && topEl) topEl.textContent = `🏆 Highest: ${highest.name} (${highest.marks}) | Lowest: ${lowest.name} (${lowest.marks})`;
+  if(highest && topEl) topEl.textContent = ` Highest: ${highest.name} (${highest.marks}) | Lowest: ${lowest.name} (${lowest.marks})`;
 }
 
 //  REGISTER STUDENT 
